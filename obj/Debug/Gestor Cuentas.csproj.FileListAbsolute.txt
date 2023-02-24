@@ -1,0 +1,16 @@
+C:\Users\Julike\source\repos\Gestor Cuentas\bin\Debug\Gestor Cuentas.exe.config
+C:\Users\Julike\source\repos\Gestor Cuentas\bin\Debug\Gestor Cuentas.exe
+C:\Users\Julike\source\repos\Gestor Cuentas\bin\Debug\Gestor Cuentas.pdb
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas.csproj.AssemblyReference.cache
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\MainWindow.g.cs
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\App.g.cs
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas_MarkupCompile.cache
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas_MarkupCompile.lref
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\MainWindow.baml
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas.g.resources
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor_Cuentas.Properties.Resources.resources
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas.csproj.GenerateResource.cache
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas.csproj.CoreCompileInputs.cache
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas.exe
+C:\Users\Julike\source\repos\Gestor Cuentas\obj\Debug\Gestor Cuentas.pdb
