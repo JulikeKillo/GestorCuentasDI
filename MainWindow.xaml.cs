@@ -35,34 +35,7 @@ namespace Gestor_Cuentas
 
         }
 
-        private void CambioTab(object sender, SelectionChangedEventArgs e)
-        {
-            if (e.Source is TabControl)
-            {
-                TabControl tabControl = (TabControl)e.Source;
-                if (tabControl.SelectedItem == tabEmp)
-                {
-                    this.Width = 1100;
-                    this.Height = 800;
-                }
-                else if (tabControl.SelectedItem == tabAlumn)
-                {
-                    this.Width = 800;
-                    this.Height = 600;
-                }
-                else if (tabControl.SelectedItem == tabTutores)
-                {
-                    this.Width = 800;
-                    this.Height = 600;
-                }
-                else if (tabControl.SelectedItem == tabAsig)
-                {
-                    this.Width = 800;
-                    this.Height = 500;
-                }
-            }
-
-        }
+       
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {

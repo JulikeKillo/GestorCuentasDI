@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gestor_Cuentas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1100">
-    <Grid>
+        Title="MainWindow" Height="auto" Width="auto" SizeToContent="WidthAndHeight">
+    <Grid Height="auto" Width="auto">
         <TabControl  SelectionChanged="CambioTab">
             <TabItem Name="tabEmp" Header="Datos">
-                <Grid>
+                <Grid Height="800" Width="1100">
                     <Grid Name="gridTablaEmpresa" Background="#FFE5E5E5">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="71*"/>
@@ -17,8 +17,8 @@
                             <ColumnDefinition Width="892*"/>
                         </Grid.ColumnDefinitions>
                         <Label Content="GESTOR DE DATOS ALUMNOS EN PRÁCTICAS" HorizontalAlignment="Left" Margin="48,67,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="28" FontWeight="Bold" FontStyle="Italic" Grid.Column="2"/>
-                        <Button Content="VER DATOS" HorizontalAlignment="Left" Margin="112,639,0,0" VerticalAlignment="Top" Height="59" Width="164" Click="Button_Click" Grid.Column="2"/>
-                        <Button Content="INSERTAR DATOS" HorizontalAlignment="Left" Margin="400,639,0,0" VerticalAlignment="Top" Height="59" Width="164"  Grid.Column="2" Click="Button_Click_2"/>
+                        <Button Content="VER DATOS" HorizontalAlignment="Left" Margin="117,685,0,0" VerticalAlignment="Top" Height="59" Width="164" Click="Button_Click" Grid.Column="2"/>
+                        <Button Content="INSERTAR DATOS" HorizontalAlignment="Left" Margin="381,685,0,0" VerticalAlignment="Top" Height="59" Width="164"  Grid.Column="2" Click="Button_Click_2"/>
                         <DataGrid Name="tablaEmpresas" Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="76,128,147,127" Grid.ColumnSpan="2"/>
                     </Grid>
                     <Grid Name="gridDatosEmpresa" Grid.ColumnSpan="3" Margin="-10,19,10,-10" Visibility="Hidden">
@@ -71,7 +71,7 @@
                 </Grid>
             </TabItem>
             <TabItem Name="tabAlumn" Header="Alumnos">
-                <Grid Background="#FFE5E5E5" Margin="-1,0,1,0">
+                <Grid Background="#FFE5E5E5" Height="600" Width="800">
                     <Image Margin="10,10,229,0" Source="/3413565.png" Stretch="Fill" Opacity="0.6"/>
                     <DataGrid x:Name="tablaAlumno" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="346,180,59,44"/>
                     <Label Content="GESTOR DE LOS ALUMNOS " HorizontalAlignment="Left" Margin="217,50,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="28" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.541,0.516"/>
@@ -88,7 +88,7 @@
                 </Grid>
             </TabItem>
             <TabItem Name="tabTutores" Header="Tutores">
-                <Grid Background="#FFE5E5E5">
+                <Grid Background="#FFE5E5E5" Height="600" Width="800">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="36*"/>
                         <ColumnDefinition Width="0*"/>
@@ -108,21 +108,22 @@
                 </Grid>
             </TabItem>
             <TabItem Name="tabAsig" Header="Asignación">
-                <Grid Background="#FFE5E5E5" Margin="2,0,-2,0">
+                <Grid Background="#FFE5E5E5" Height="500" Width="800">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="36*"/>
+                        <ColumnDefinition Width="28*"/>
+                        <ColumnDefinition Width="25*"/>
                         <ColumnDefinition Width="0*"/>
-                        <ColumnDefinition Width="511*"/>
+                        <ColumnDefinition Width="747*"/>
                     </Grid.ColumnDefinitions>
-                    <DataGrid  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="315,144,37,88" Grid.Column="2"/>
-                    <Label Content="GESTOR DE LA ASIGNACIÓN DE PLAZAS" HorizontalAlignment="Left" Margin="54,53,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="28" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.541,0.516" Grid.Column="2" Height="44" Width="522"/>
-                    <Label Content="Empresa Elecc:" HorizontalAlignment="Left" Margin="18,225,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift" Grid.Column="2" Height="27" Width="119"/>
-                    <Label Content="Alumno Elecc:" HorizontalAlignment="Left" Margin="18,162,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift" Height="27" Width="95" Grid.Column="2"/>
-                    <Label Content="Tutor Elecc:" HorizontalAlignment="Left" Margin="18,298,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift" RenderTransformOrigin="0.613,1.163" Grid.Column="2" Height="27" Width="97"/>
-                    <Label Content="" HorizontalAlignment="Left" Margin="12,480,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift" RenderTransformOrigin="0.68,2.014" Grid.Column="2" Height="27" Width="65"/>
-                    <ComboBox Name="cbEleccAlum" Grid.Column="2" HorizontalAlignment="Left" Margin="124,165,0,0" VerticalAlignment="Top" Width="120"/>
-                    <ComboBox Name="cbEleccEmp" Grid.Column="2" HorizontalAlignment="Left" Margin="124,227,0,0" VerticalAlignment="Top" Width="120"/>
-                    <ComboBox Name="cbEleccTutor" Grid.Column="2" HorizontalAlignment="Left" Margin="124,301,0,0" VerticalAlignment="Top" Width="120"/>
+                    <DataGrid  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="315,144,37,88" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="GESTOR DE LA ASIGNACIÓN DE PLAZAS" HorizontalAlignment="Left" Margin="54,53,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="28" FontWeight="Bold" FontStyle="Italic" RenderTransformOrigin="0.541,0.516" Grid.Column="2" Height="44" Width="522" Grid.ColumnSpan="2"/>
+                    <Label Content="Empresa Elecc:" HorizontalAlignment="Left" Margin="18,225,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift" Grid.Column="2" Height="27" Width="119" Grid.ColumnSpan="2"/>
+                    <Label Content="Alumno Elecc:" HorizontalAlignment="Left" Margin="18,162,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift" Height="27" Width="95" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <Label Content="Tutor Elecc:" HorizontalAlignment="Left" Margin="18,298,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift" RenderTransformOrigin="0.613,1.163" Grid.Column="2" Height="27" Width="97" Grid.ColumnSpan="2"/>
+                    <Label Content="" HorizontalAlignment="Left" Margin="12,480,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Bahnschrift" RenderTransformOrigin="0.68,2.014" Grid.Column="2" Height="27" Width="65" Grid.ColumnSpan="2"/>
+                    <ComboBox Name="cbEleccAlum" Grid.Column="2" HorizontalAlignment="Left" Margin="124,165,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+                    <ComboBox Name="cbEleccEmp" Grid.Column="2" HorizontalAlignment="Left" Margin="124,227,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
+                    <ComboBox Name="cbEleccTutor" Grid.Column="2" HorizontalAlignment="Left" Margin="124,301,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
 
